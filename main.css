@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color:#353634
+}
+
+header{
+    display: flex;
+    text-transform: uppercase;
+    padding: 16px 8px;
+    background-color: #353634;
+    border-bottom: 16px #353634 solid;
+    align-items: center;
+    justify-content:center;
+}
+
+header h1{
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    color: #fff;
+    margin-right: 20px;
+}
+
+header button{
+    border-radius: 8px;
+    width: auto; 
+    margin-bottom: auto;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    border: 8px solid #545453;
+    border-radius: 5px;  
+    padding: 24px;
+    background-color: #545453;
+    display: none;
+}
+
+input, button{
+    display: block;
+    padding: 8px;
+    margin-bottom: 16px;
+    width: 200px;
+    text-align: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+}
+
+button{
+    background-color: #009432;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    align-items: center;
+}
+
+form #btn-voltar{
+    background-color: red;
+}
+
+table{
+    width: 100%;
+    max-width: 500px;
+    border: 10px solid #545453;
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+thead th{
+    color: #fff;
+    border-bottom: 4px solid #545453;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+table td{
+    color: #fff;
+    padding: 16px 8px;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid #545453;
+}
+
+table td input{
+    display: inline-block;
+    max-width: 18px;
+    width: 100%;
+    border-bottom: 1px;
+    margin-bottom: 0;
+} 
+
+tbody{
+    color: #fff;
+}
+
+tr {
+    position: relative;
+}
+
+tr::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 17%;
+    width: 45%;
+    border-bottom: 2px solid #545453;
+    transform: scaleX(0) translateY(-50%);
+    transition: transform 0.3s ease;
+}
+
+tr.line-through::after {
+    transform: scaleX(1) translateY(-50%);
+}
